@@ -1,12 +1,13 @@
 <?php 
   session_start();
     if($_SESSION["user"]){
+	    $admin = $_SESSION["user"];
     }
     else{
       header("location: adminlogin.php");
     }
   
-  $admin = $_SESSION["user"];
+  
 ?>
 
 
