@@ -1,12 +1,13 @@
 <?php 
   session_start();
     if($_SESSION["user"]){
+	    $user = $_SESSION["user"];
     }
     else{
       header("location: login.php");
     }
   
-  $user = $_SESSION["user"];
+  
 ?>
 
 <!DOCTYPE html>
