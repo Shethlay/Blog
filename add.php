@@ -1,13 +1,9 @@
 <?php
 	session_start();
-	if($_SESSION['user'])
-	{
-	}
-	else
+	if(!$_SESSION['user'])
 	{
 		header("location:login.php");
 	}
-
 if(!empty($_POST['submit1']))
 {
 		if($_SERVER["REQUEST_METHOD"]=="POST")
