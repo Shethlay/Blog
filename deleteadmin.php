@@ -1,12 +1,8 @@
 <?php
 	session_start();
 	if($_SESSION['user']){	
-	}
-	else
-	{
 		header("location:login.php");
 	}
-
   if($_SERVER['REQUEST_METHOD']=="GET")
   {
   		$conn = mysqli_connect("localhost","root","","blog") or die(mysql_error()); 
